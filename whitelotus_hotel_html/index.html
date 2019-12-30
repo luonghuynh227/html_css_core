@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+	
+	<head>
+				<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>Homepage</title>
+<link rel="icon" href="./favicon.ico" />
+<!-- <link href="https://fonts.googleapis.com/css?family=Muli:300|Taviraj&amp;subset=vietnamese" rel="stylesheet"> -->
+		<link rel="stylesheet" href="./assets/css/vendor.css" />
+<link rel="stylesheet" href="./assets/css/main.css" />
+<!-- <link rel="stylesheet" href="./assets/css/responsive.css" /> -->	</head>
+
+	<body class="home">	
+  
+                	<input id="toggle-hamburger" type="checkbox" style="display:none" />
+<nav id="navbar">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <label for="toggle-hamburger" class="hamburger hamburger--squeeze">
+        <div class="hamburger-box">
+          <div class="hamburger-inner"></div>
+        </div>
+      </label>
+      <div class="logo">
+        <a href="./index.html"><img src="./assets/images/logo_hotel.svg" alt="logo"></a>
+      </div>
+      <div class="languages">
+        <a href="#">VI</a>
+      </div>
+    </div>
+    <div class="navbar-content">
+      <div id="nav-menus" class="menus">
+        <div class="menu-item menu-left">
+          <ul class="nav nav-pills">
+            <li class=""><a href="./about_us.html">Hotel Overview</a></li>
+            <li class=""><a href="./rooms_suites_overview.html">Rooms & Suites</a></li>
+            <li class=""><a href="./restaurants_bar_list.html">Restaurants & Bars</a></li>
+            <li class=""><a href="./meeting_event.html">Meetings & Events</a></li>
+          </ul>
+        </div>
+        <div class="menu-item menu-right">
+          <ul class="nav nav-pills">
+            <li class="dropdown ">
+              <a href="./leisure.html" class="dropdown-toggle" type="button" data-toggle="dropdown">Leisure</a>
+              <ul class="dropdown-menu">
+                <li><a href="./leisure.html#leisure-spa">Spa</a></li>
+                <li><a href="./leisure.html#leisure-tailor">Tailor</a></li>
+                <li><a href="./leisure.html#leisure-gym">Gym</a></li>
+                <li><a href="./leisure.html#leisure-transportation">Transportation</a></li>
+              </ul>
+            </li>
+            <li class=""><a href="./destination_list.html">Destination</a></li>
+            <li class=""><a href="./news.html">News</a></li>
+            <li class=""><a href="./contact.html">Contact Us</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</nav>	
+	<header id="header">
+  <div class="slide-header owl-carousel owl-theme">
+    <div class="slide-item" style="background-image:url(./assets/images/slide_header_img.jpg);">
+      <div class="container">
+        <h1 class="slide-heading"><small>Welcome To</small>White Lotus Hotel</h1>
+      </div>
+    </div>
+    <div class="slide-item" style="background-image:url(./assets/images/slide_header_img_2.jpg);">
+      <div class="container">
+        <h1 class="slide-heading"><small>Welcome To</small>White Lotus Hotel 2</h1>
+      </div>
+    </div>
+    <div class="slide-item" style="background-image:url(./assets/images/slide_header_img_3.jpg);">
+      <div class="container">
+        <h1 class="slide-heading"><small>Welcome To</small>White Lotus Hotel 3</h1>
+      </div>
+    </div>
+    <div class="slide-item" style="background-image:url(./assets/images/slide_header_img.jpg);">
+      <div class="container">
+        <h1 class="slide-heading"><small>Welcome To</small>White Lotus Hotel 4</h1>
+      </div>
+    </div>
+    <div class="slide-item" style="background-image:url(./assets/images/slide_header_img_2.jpg);">
+      <div class="container">
+        <h1 class="slide-heading"><small>Welcome To</small>White Lotus Hotel 5</h1>
+      </div>
+    </div>
+  </div>
+</header>
+
+<section class="form-book">
+  <div class="container">
+    <form id="form-book" class="form-inline" action="#">
+      <div class="form-group check-in">
+        <label class="control-label" for="">Check-in</label>
+        <input type="text" class="form-control datetime" placeholder="dd/mm/yyyy - hh:mm"/>
+      </div>
+      <div class="form-group check-out">
+        <label class="control-label" for="">Check-out</label>
+        <input type="text" class="form-control datetime" placeholder="dd/mm/yyyy - hh:mm"/>
+      </div>
+      <div class="form-group adult">
+        <label class="control-label" for="">Adult</label>
+        <input type="number" class="form-control" min="0" max="100" value="0"/>
+      </div>
+      <div class="form-group children">
+        <label class="control-label" for="">Children(≤ 6yrs old)</label>
+        <input type="number" class="form-control" min="0" max="100" value="0"/>
+      </div>
+      <div class="form-group no-of-room">
+        <label class="control-label" for="">No of Room</label>
+        <input type="number" class="form-control" min="0" max="100" value="0"/>
+      </div>
+      <div class="form-group submit">
+        <button class="btn btn-primary" type="button">Book Now</button>
+      </div>
+    </form>
+  </div>
+</section>	
+	<section class="section section-about">
+  <div class="section-header">
+    <div class="container">
+      <h2 class="section-heading line-left">About us</h2>
+      <p class="section-description">White Lotus a magical and charming city. I hope you will find that the character, history and romance of the Sofitel Legend Metropole Hanoi may add a little extra special something to your journey here.</p>
+    </div>
+  </div>
+  <div class="section-body">
+    <div class="container-fluid text-center">
+      <div class="slide-full-width owl-carousel owl-theme">
+  <div class="slide-item">
+    <a href="./assets/images/slide/image_1.jpg" data-fancybox="gallery">
+      <div class="cover-image" style="background-image: url('./assets/images/slide/image_1_thum.jpg')"></div>
+    </a>
+  </div>
+  <div class="slide-item">
+    <a href="./assets/images/slide/image_2.jpg" data-fancybox="gallery">
+      <div class="cover-image" style="background-image: url('./assets/images/slide/image_2_thum.jpg')"></div>
+    </a>
+  </div>
+  <div class="slide-item">
+    <a href="./assets/images/slide/image_3.jpg" data-fancybox="gallery">
+      <div class="cover-image" style="background-image: url('./assets/images/slide/image_3_thum.jpg')"></div>
+    </a>
+  </div>
+  <div class="slide-item">
+    <a href="./assets/images/slide/image_4.jpg" data-fancybox="gallery">
+      <div class="cover-image" style="background-image: url('./assets/images/slide/image_4_thum.jpg')"></div>
+    </a>
+  </div>
+  <div class="slide-item">
+    <a href="./assets/images/slide/image_5.jpg" data-fancybox="gallery">
+      <div class="cover-image" style="background-image: url('./assets/images/slide/image_5_thum.jpg')"></div>
+    </a>
+  </div>
+  <div class="slide-item">
+    <a href="./assets/images/slide/image_1.jpg" data-fancybox="gallery">
+      <div class="cover-image" style="background-image: url('./assets/images/slide/image_1_thum.jpg')"></div>
+    </a>
+  </div>
+  <div class="slide-item">
+    <a href="./assets/images/slide/image_2.jpg" data-fancybox="gallery">
+      <div class="cover-image" style="background-image: url('./assets/images/slide/image_2_thum.jpg')"></div>
+    </a>
+  </div>
+  <div class="slide-item">
+    <a href="./assets/images/slide/image_3.jpg" data-fancybox="gallery">
+      <div class="cover-image" style="background-image: url('./assets/images/slide/image_3_thum.jpg')"></div>
+    </a>
+  </div>
+  <div class="slide-item">
+    <a href="./assets/images/slide/image_4.jpg" data-fancybox="gallery">
+      <div class="cover-image" style="background-image: url('./assets/images/slide/image_4_thum.jpg')"></div>
+    </a>
+  </div>
+  <div class="slide-item">
+    <a href="./assets/images/slide/image_5.jpg" data-fancybox="gallery">
+      <div class="cover-image" style="background-image: url('./assets/images/slide/image_5_thum.jpg')"></div>
+    </a>
+  </div>
+</div>      <ul class="list-inline-button">
+        <li>
+          <a href="./about_us.html" class="btn btn-primary">View Detail</a>
+        </li>
+        <li>
+          <a class="btn btn-default" href="https://junoteam.com/blog" target="_blank">See more <i class="icon icon-arrow-button"></i></a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section class="section section-services">
+  <div class="container">
+    <div class="section-header absolute-right text-right">
+      <h2 class="section-heading line-left">Services</h2>
+      <p class="section-description">White Lotus a magical and charming city. I hope you will find that the character, history and</p>
+    </div>
+    <div class="section-body">
+      <div class="card-list">
+        <div class="row">
+          <div class="col-sm-4">
+                                                            <div class="card">
+  <a href="./rooms_suites_overview.html" class="card-cover-image lazy" data-src="./assets/images/card/card_services_img_1.jpg"></a>
+  <h3 class="card-title" title="Rooms & Suites"><a href="./rooms_suites_overview.html">Rooms & Suites</a></h3>
+  <p class="card-description">364 rooms & suites, in which the original colonial grandeur is preserved in the historical White Lo</p>
+  <a href="./rooms_suites_overview.html" class="btn btn-default card-button">See more <i class="icon icon-arrow-button"></i></a>
+</div>          </div>
+
+          <div class="col-sm-4">
+                                                            <div class="card">
+  <a href="./restaurants_bar_list.html" class="card-cover-image lazy" data-src="./assets/images/card/card_services_img_2.jpg"></a>
+  <h3 class="card-title" title="Restaurants & Bars"><a href="./restaurants_bar_list.html">Restaurants & Bars</a></h3>
+  <p class="card-description">From the Paris-inspired cafe La Terrasse, to the popular poolside Bamboo Bar or Vietnamese</p>
+  <a href="./restaurants_bar_list.html" class="btn btn-default card-button">See more <i class="icon icon-arrow-button"></i></a>
+</div>          </div>
+
+          <div class="col-sm-4">
+                                                            <div class="card">
+  <a href="./meeting_event.html" class="card-cover-image lazy" data-src="./assets/images/card/card_services_img_3.jpg"></a>
+  <h3 class="card-title" title="Meetings & Events"><a href="./meeting_event.html">Meetings & Events</a></h3>
+  <p class="card-description">Sofitel Legend Metropole Hanoi has long been the city's favourite venue for stylish events. Genera</p>
+  <a href="./meeting_event.html" class="btn btn-default card-button">See more <i class="icon icon-arrow-button"></i></a>
+</div>          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section section-review" style="background-image:url(./assets/images/review_bg.jpg)">
+  <div class="container">
+    <div class="review box">
+  <div class="box-frame">
+    <div class="box-border"></div>
+    <div class="box-corner"><span></span><span></span><span></span><span></span></div>
+  </div>
+  <div class="review-content box-content">
+    <div class="review-logo">
+      <img src="./assets/images/tripadvisor_logo.svg" alt="tripadvisor_logo">
+      <span class="dots">
+        <i class="icon icon-dot-circle"></i>
+        <i class="icon icon-dot-circle"></i>
+        <i class="icon icon-dot-circle"></i>
+        <i class="icon icon-dot-circle"></i>
+        <i class="icon icon-dot-circle"></i>
+      </span>
+    </div>
+    <div class="review-slide owl-carousel owl-theme">
+      <div class="review-item">
+        <h3 class="review-title">Awesome place to stay</h3>
+        <p class="review-quote">Great spot just off the Main Street so it’s nice and quiet. The staff were so friendly and helpful. Breakfast was great. Great price for great service ... <span style="display: none">Definitely be back here when we come back to Hue.</span></p>
+        <p class="review-author">David K</p>
+        <p class="review-address">Consecon, Canada</p>
+      </div>
+      <div class="review-item">
+        <h3 class="review-title">Bright and beautiful</h3>
+        <p class="review-quote">Lovely hotel, contemporary, bright and spacious. Our room was clean and comfortable with a small kitchenette - only used for making drinks ... <span style="display: none">because there are so many places to eat nearby. Winnie and the team are really lovely, so friendly and helpful. And we loved the cooked breakfasts.</span></p>
+        <p class="review-author">CRaig N</p>
+        <p class="review-address">Consecon, Canada</p>
+      </div>
+      <div class="review-item">
+        <h3 class="review-title">Great hotel in Hue</h3>
+        <p class="review-quote">This hotel is right in the center but the feeling when we are in the hotel is very quiet and comfortable. The style offers the traveler an excellent relaxing ...  <span style="display: none">and inspiring room with the white pictures and color of quotations. Room is equipped with small kitchenette. Food is excellent. Best food in Vietnam!</span></p>
+        <p class="review-author">Cruz K</p>
+        <p class="review-address">Consecon, Canada</p>
+      </div>
+      <div class="review-item">
+        <h3 class="review-title">Great hospitality and location</h3>
+        <p class="review-quote">We got a warm welcome and found a clean room. Staff was very helpful and location was close (by foot) to a lot of restaurants and sights... <span style="display: none">We would definitely recommend this place to everyone and we will be coming back!</span></p>
+        <p class="review-author">SmitDaan</p>
+        <p class="review-address">Consecon, Canada</p>
+      </div>
+      <div class="review-item">
+        <h3 class="review-title">The beautiful hotel</h3>
+        <p class="review-quote">The hotel is a nice and quite place for a businessman relaxing after working a long date. The meal is good and furthermore, the staff is nice and friendly... <span style="display: none">I will visit your hotel in my next business trip.</span></p>
+        <p class="review-author">Ashley S</p>
+        <p class="review-address">Consecon, Canada</p>
+      </div>
+    </div>
+    <a href="https://www.tripadvisor.com/Hotel_Review-g293925-d14125166-Reviews-Lief_Mojo_Saigon-Ho_Chi_Minh_City.html" class="btn btn-default" target="_blank">See more <i class="icon icon-arrow-button"></i></a>
+  </div>
+  <div id="review-slide-dots" class="owl-dots"></div>
+</div>  </div>
+</section>
+
+<section class="section section-offer">
+  <div class="container">
+    <div class="section-body">
+      <div class="card-list">
+        <div class="row">
+          <div class="col-sm-4">
+                                                            <div class="card card-square">
+  <a href="#" data-toggle="modal" data-target="#bookRoomModal" class="card-cover-image lazy" data-src="./assets/images/card/card_services_img_1.jpg"></a>
+  <h3 class="card-title" title="Holiday Season Promotion 2018 - Weekend Escape"><a href="#">Holiday Season Promotion 2018 - Weekend Escape</a></h3>
+  <p class="card-description">364 rooms & suites, in which the original colonial grandeur is preserved in the historical White Lo</p>
+  <a href="#" class="btn btn-primary card-button" data-toggle="modal" data-target="#bookRoomModal" data-toggle="modal" data-target="#bookRoomModal">Book Now</a>
+</div>          </div>
+
+          <div class="col-sm-4">
+                                                            <div class="card card-square">
+  <a href="#" data-toggle="modal" data-target="#bookRoomModal" class="card-cover-image lazy" data-src="./assets/images/card/card_services_img_2.jpg"></a>
+  <h3 class="card-title" title="Weekend Escape - Best choices for your holiday trip"><a href="#">Weekend Escape - Best choices for your holiday trip</a></h3>
+  <p class="card-description">From the Paris-inspired cafe La Terrasse, to the popular poolside Bamboo Bar or Vietnamese</p>
+  <a href="#" class="btn btn-primary card-button" data-toggle="modal" data-target="#bookRoomModal" data-toggle="modal" data-target="#bookRoomModal">Book Now</a>
+</div>          </div>
+
+          <div class="col-sm-4">
+                                                            <div class="card card-square">
+  <a href="#" data-toggle="modal" data-target="#bookRoomModal" class="card-cover-image lazy" data-src="./assets/images/card/card_services_img_3.jpg"></a>
+  <h3 class="card-title" title="Free Nights After Two Stays (8000 point)"><a href="#">Free Nights After Two Stays (8000 point)</a></h3>
+  <p class="card-description">Sofitel Legend Metropole Hanoi has long been the city's favourite venue for stylish events. Genera</p>
+  <a href="#" class="btn btn-primary card-button" data-toggle="modal" data-target="#bookRoomModal" data-toggle="modal" data-target="#bookRoomModal">Book Now</a>
+</div>          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+	<footer id="footer">
+
+  <div class="footer-header">
+    <div class="container">
+      <div class="footer-logo">
+        <a href="https://whitelotus.com.vn" target="_blank"><img src="./assets/images/logo_convention.svg" alt="Whitelotus Convention"></a>
+      </div>
+      <form id="form-subscribe" action="#">
+        <div class="form-group">
+          <input type="email" class="form-control" name="email" id="email" placeholder="Leave your email address here to receive the best offer" autocomplete="off" required="">
+          <button type="submit" class="btn-icon icon icon-plane"></button>
+        </div>
+        <input type="hidden" name="action" value="subscribe">
+      </form>
+      <p class="footer-hotline text-center">Hotline: <a href="tel:+ 84 (0) 234 3830 444">+ 84 (0) 234 3830 444</a></p>
+    </div>
+  </div>
+  <div class="footer-body">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3">
+          <ul class="socials list-inline">
+            <li><a href="#" target="_blank"><i class="icon icon-facebook"></i></a></li>
+            <li><a href="#" target="_blank"><i class="icon icon-youtube"></i></a></li>
+            <li><a href="#" target="_blank"><i class="icon icon-instagram"></i></a></li>
+          </ul>
+          <p><b>Email:</b> <a href="mailto:hr@whitelotus.com.vn">hr@whitelotus.com.vn</a></p>
+        </div>
+        <div class="col-md-5">
+          <p><b>Address:</b> 5-7 Hoang Hoa Tham, Hue City, Vietnam</p>
+          <p><span><b>Tel:</b> +84 (0) 234 3830 444</span><span><b>Fax:</b> +84 (0) 234 3828962</span></p>
+        </div>
+        <div class="col-md-4">
+          <p>Managed by <a href="https://facebook.com" class="text-underline" target="_blank">Nguyen Huu Minh Nhat</a></p>
+          <p>Design & Develop by <a class="text-underline" href="https://junoteam.com" target="_blank">Junoteam</a></p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <p class="copyright">Copyright © 2018 White Lotus. All rights reserved</p>
+</footer>
+
+<a id="scrollTop" href="#header" class="active"><i class="icon icon-arrow-up"></i></a>
+
+<div id="subscribeModal" class="popup-1 modal fade" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <div class="cover-image" style="background-image: url(./assets/images/popup_img_1.jpg)"></div>
+      </div>
+      <div class="modal-body">
+        <h2 class="modal-title line-left">Get 10% Off</h2>
+        <p class="modal-description">White Lotus  a magical and charming city. I hope you will find that the character, history and romance of the Sofitel Legend Metropole Hanoi may add a little extra special something to </p>
+        <form action="#">
+          <div class="form-group">
+            <input type="email" class="form-control" placeholder="Your email" required />
+          </div>
+          <button type="submit" class="btn btn-primary" data-toggle="modal" data-target="#bookRoomModal">Book Now</button>
+        </form>
+        <button type="button" class="close" data-dismiss="modal">No thanks, I don't like gifts</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="bookRoomModal" class="popup-2 modal modal-lg fade" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+       <button type="button" class="close-icon" data-dismiss="modal"></button>
+      <div class="modal-header">
+        <div class="cover-image" style="background-image: url(./assets/images/popup_img_1.jpg)"></div>
+      </div>
+      <div class="modal-body">
+        <h3 class="modal-title">Holiday Season Promotion 2018</h3>
+          <p class="modal-description">White Lotus a magical and charming city. I hope you will find that the character</p>
+          <form action="#" class="text-center">
+            <div class="col-left">
+              <div class="form-group">
+                <label for="full_name" class="control-label">Full Name</label>
+                <input type="text" class="form-control" id="full_name" name="full_name" />
+              </div>
+              <div class="form-group">
+                <label for="phone" class="control-label">Phone</label>
+                <input id="phone" type="text" class="form-control" name="phone" />
+              </div>
+              <div class="form-group">
+                <label for="arrival" class="control-label">Arrival</label>
+                <input id="arrival" type="text" class="form-control datetime" name="arrival" />
+              </div>
+            </div>
+            <div class="col-right">
+              <div class="form-group">
+                <label for="email" class="control-label">Email</label>
+                <input id="email" type="email" class="form-control" name="email" />
+              </div>
+              <div class="col-row">
+              <div class="form-group">
+                <label for="adults" class="control-label">Adults</label>
+                <input id="adults" type="number" class="form-control" name="adults" />
+              </div>
+              <div class="form-group">
+                  <label for="childrens" class="control-label">Childrens</label>
+                  <input id="childrens" type="number" class="form-control" name="childrens" />
+                </div>
+              </div>
+              <div class="form-group">
+                  <label for="departure" class="control-label">Departure</label>
+                  <input id="departure" type="text" class="form-control datetime" name="departure" />
+                </div>
+            </div>
+            <div class="form-group">
+              <label for="note" class="control-label">Note</label>
+              <textarea class="form-control" name="note" id="note" rows="3"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary" data-toggle="modal" data-target="#bookRoomModal">Book Now</button>
+          </form>
+      </div>
+    </div>
+  </div>
+</div>
+  <script src="./assets/js/jquery.min.js"></script>
+<script src="./assets/js/vendor.min.js"></script>
+<script src="./assets/js/app.min.js"></script>	</body>
+</html>

@@ -1,0 +1,37 @@
+@mixin owl_nav {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.slide-full-width{
+  margin-bottom: 40px;
+  @include device_min(small){
+    padding: 0 45px;
+  }
+  .slide-item{
+    .cover-image{
+      @include cover_image;
+      padding-top: 70.376%;
+    }
+  }
+  .owl-nav{
+    [class*='owl-']{
+      i{
+        font-size: 50px;
+      }
+    }
+    button.owl-prev,
+    button.owl-next{
+      color: $line-color;
+    }
+  }
+  .owl-prev{
+    @include owl_nav;
+    left: -12px;
+  }
+  .owl-next{
+    @include owl_nav;
+    right: -12px;
+  }
+}

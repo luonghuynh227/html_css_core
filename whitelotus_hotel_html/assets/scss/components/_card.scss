@@ -1,0 +1,51 @@
+// CARD
+.card{
+  .card-cover-image{
+    display: block;
+    @include cover_image;
+    padding-top: 113.514%;
+    margin-bottom: 30px;
+  }
+  .card-title{
+    margin-top: 0;
+    margin-bottom: 12px;
+    @include device_min(small){
+      min-height: 64px;
+    }
+    a{
+      color: $gray;
+      &:hover,
+      &:focus{
+        color: $primary-color;
+        text-decoration: none;
+      }
+    }
+  }
+  .card-description{
+    margin-bottom: 34px;
+    @include device_min(small){
+      max-height: 48px;
+      overflow: hidden;
+    }
+  }
+  .card-button{
+    @include device_max(small) {
+      margin-bottom: 60px;
+    }
+  }
+}
+
+// CARD STYLE
+.card-square {
+  .card-cover-image{
+    padding-top: 100%;
+  }
+}
+
+// CARD LIST
+.card-list{
+  width: 100%;
+  .card{
+    width: 100%;
+  }
+}

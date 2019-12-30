@@ -1,0 +1,553 @@
+// INCLUDE
+@mixin section_heading_absolute {
+  //position: absolute;
+  //top: calc(50% - 1px);
+  display: inline-block;
+  content: "";
+  width: 122px;
+  height: 1px;
+  background-color: $primary-color;
+  margin-bottom: 14px;
+
+  @include device_max(small) {
+    margin-bottom: 9px;
+  }
+}
+
+// EXTEND
+%section_heading_line_left {
+  margin-right: 20px;
+}
+
+%section_heading_line_right {
+  margin-left: 20px;
+}
+
+// SECTION
+.section {
+  padding: 100px 0;
+  overflow-x: hidden;
+
+  @include device_min(small) {
+    padding: 180px 0;
+  }
+
+  >.container {
+    position: relative;
+  }
+
+  &.section-bg-pattern {
+    @include bg_diagonal;
+  }
+}
+
+.section.section-full-2-col {
+  background-color: $primary-color;
+  position: relative;
+
+  @include device_min(small) {
+    padding: 140px 0 135px;
+  }
+
+  >.container {
+    position: initial;
+  }
+
+  .section-header {
+    margin-bottom: 0;
+
+    @include device_min(medium) {
+      width: 50%;
+      padding-right: 120px;
+    }
+  }
+
+  .section-heading {
+    color: #fff;
+
+    &.line-left {
+      &:before {
+        background-color: #fff;
+      }
+    }
+
+    &.line-right {
+      &:after {
+        background-color: #fff;
+      }
+    }
+  }
+
+  .section-description {
+    color: #fff;
+    width: 100%;
+
+    >p {
+      margin-bottom: 34px;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  .section-body {
+    display: none;
+     
+    @include device_min(medium) {
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 50%;
+      right: 0;
+      bottom: 0;
+
+      .gym-slide{
+        
+      }
+      .owl-item{
+        height: 500px;
+        position: relative;
+      }
+      .cover-image {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        @include cover_image;
+        
+      }
+    }
+  }
+}
+
+.section-header {
+  @include clearfix;
+  margin-bottom: 44px;
+
+  // .section-description {
+  //   text
+  // }
+
+  &.absolute-right {
+    @include device_min(large) {
+      position: absolute;
+      z-index: 1;
+      top: -7px;
+      right: 15px;
+      height: 160px;
+      width: 33.333333%;
+      padding-left: 30px;
+      background-color: #fff;
+      text-align: right;
+
+      .section-description {
+        width: 100%;
+        max-height: 96px;
+        overflow: hidden;
+      }
+    }
+  }
+}
+
+.section-body {
+  @include clearfix;
+}
+
+.section-heading {
+  margin: {
+    top: -17px;
+    bottom: 9px;
+  }
+
+  //position: relative;
+  display: inline-block;
+
+  @include device_max(small) {
+    font-size: 26px;
+  }
+}
+
+.line-left {
+  display: inline-block;
+  //padding-left: 140px;
+
+  &:before {
+    @include section_heading_absolute;
+    @extend %section_heading_line_left;
+  }
+}
+
+.line-right {
+  display: inline-block;
+  //padding-right: 140px;
+
+  &:after {
+    @include section_heading_absolute;
+    @extend %section_heading_line_right;
+  }
+}
+
+.section-description {
+  margin-bottom: 0;
+
+  @include device_min(medium) {
+    width: 770px;
+  }
+
+  &.center {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  &.right {
+    margin-left: auto;
+  }
+}
+
+.section-btn {
+  margin-top: 34px;
+  // &.btn-link{
+  // margin-top: 23px;
+  // }
+}
+
+// SECTION CUSTOM
+.section-about {
+  padding-bottom: 0;
+
+  @include device_max(small) {
+    padding-bottom: 40px;
+  }
+}
+
+.section-review {
+  @include cover_image;
+  position: relative;
+
+  &:before {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba($gray, .5);
+  }
+
+  @include device_min(small) {
+    padding: 145px 0;
+    min-height: 723px;
+  }
+}
+
+.section-offer {
+  .card {
+    .card-cover-image {
+      padding-top: 100%;
+    }
+  }
+}
+
+.section-accommodation {
+  padding-bottom: 0;
+}
+
+.section-accommodation-services {
+  text-align: center;
+
+  .section-header {
+    margin-bottom: 0;
+  }
+
+  .section-description {
+    margin: auto;
+  }
+}
+
+.section-accommodation-detail {
+  .section-btn {
+    margin-bottom: 5px;
+  }
+}
+
+.section-accommodation-detail-services {
+  min-height: 885px;
+  @include bg_diagonal;
+  position: relative;
+
+  &:before {
+    position: absolute;
+    content: "";
+    opacity: .1;
+    top: 50%;
+    margin-top: -318px;
+    width: 657px;
+    height: 636px;
+    left: -328.5px;
+
+    background: {
+      image: url(../images/logo_bg_2.svg);
+      repeat: no-repeat;
+      size: cover;
+      position: center;
+    }
+  }
+
+  .section-header {
+    @include device_min(small) {
+      margin-bottom: 120px;
+    }
+  }
+}
+
+//TODO: CONTACT US
+.section-contact {
+  .section-header {
+    margin-bottom: 25px;
+  }
+
+  .section-body {
+    p {
+      margin-bottom: 2px;
+
+      span {
+        &:before {
+          content: " - ";
+        }
+
+        &:first-child {
+          &:before {
+            content: "";
+          }
+        }
+
+        @include device_max(small) {
+          display: block;
+          width: 100%;
+
+          &:before {
+            content: "";
+          }
+        }
+      }
+    }
+  }
+}
+
+#form-contact {
+  margin-top: 32px;
+
+  [type="submit"] {
+    margin-top: 20px;
+  }
+
+  @include device_max(medium) {
+    margin-bottom: 60px;
+  }
+}
+
+
+//TODO: MEETINGS & EVENTS
+.section-meeting-overview {
+  .section-header {
+    margin-bottom: 69px;
+  }
+
+  table {
+    thead {
+
+      th,
+      td {
+        &:nth-child(1) {
+          min-width: 289px;
+        }
+
+        &:nth-child(2) {
+          min-width: 107px;
+        }
+
+        &:nth-child(3) {
+          min-width: 181px;
+        }
+
+        &:nth-child(4) {
+          min-width: 132px;
+        }
+
+        &:nth-child(5) {
+          min-width: 95px;
+        }
+
+        &:nth-child(6) {
+          min-width: 164px;
+        }
+
+        &:nth-child(7) {
+          min-width: 104px;
+        }
+
+        &:nth-child(8) {
+          min-width: 98px;
+        }
+      }
+    }
+  }
+
+  .section-body {
+    >.btn {
+      margin-top: 40px;
+    }
+  }
+}
+
+#meeting-tabs-wrap{
+  position: relative;
+  margin-bottom: 40px;
+  >label{
+    position: absolute;
+    top: 0;
+    right: 8px;
+    z-index: 1;
+    width: 44px;
+    height: 44px;
+    cursor: pointer;
+    margin: 0;
+    >i{
+      font-size: 16px;
+      line-height: 44px;
+    }
+    @include device_min(small){
+      display: none;
+    }
+  }
+  
+  @include device_max(small) {
+    background-color: #fff;
+    border-top: 1px solid $line-color;
+    border-bottom: 1px solid $line-color;
+    overflow: hidden;
+    max-height: 46px;
+    margin: {
+      left: -15px;
+      right: -15px;
+    }
+    &.fixed{
+      margin: {
+        left: 0;
+        right: 0;
+      }
+      position: fixed;
+      top: 79px;
+      left: 0;
+      right: 0;
+      z-index: 9;
+      font-size: 0;
+      margin-bottom: 0;
+      &+.tab-content{
+        margin-top: 86px;
+      }
+    }
+  }
+}
+
+#meeting-tabs {
+  display: inline-block;
+
+  >li {
+    @include font_heading;
+    font-size: 30px;
+    text-transform: uppercase;
+    margin-left: 38px;
+
+    &:first-child {
+      margin-left: 0;
+    }
+
+    a {
+      color: $gray-light;
+    }
+
+    &.active {
+      a {
+        color: $primary-color;
+      }
+    }
+
+    @include device_max(large) {
+      margin-left: 20px;
+    }
+
+    @include device_max(medium) {
+      font-size: 20px;
+    }
+
+    @include device_max(small) {
+      margin-left: 0;
+      width: 100%;
+      // margin-bottom: 15px;
+      > a{
+        padding: 11px 20px;
+      }
+    }
+  }
+
+  @include device_max(small) {
+    
+  }
+}
+
+#meeting-tabs-toggle:checked ~ #meeting-tabs-wrap{
+  max-height: 1000px;
+}
+
+
+.section-meeting-package {
+  min-height: 2492px;
+  @include bg_diagonal;
+  position: relative;
+
+  >.container {
+    position: initial;
+  }
+
+  .section-header {
+    position: relative;
+    margin-bottom: 110px;
+
+    &:before {
+      position: absolute;
+      content: "";
+      opacity: .1;
+      right: -87px;
+      top: -110px;
+      width: 178px;
+      height: 172px;
+
+      background: {
+        image: url(../images/logo_bg_2.svg);
+        repeat: no-repeat;
+        size: cover;
+        position: center;
+      }
+    }
+  }
+
+}
+
+.section-meeting-gallery {
+  @include device_max(large) {
+    .section-body {
+      margin-left: -10px;
+      margin-right: -10px;
+    }
+  }
+}
+
+// LEISURE
+.section-leisure-spa {
+  .section-body-packpage {
+    margin-top: 120px;
+  }
+}

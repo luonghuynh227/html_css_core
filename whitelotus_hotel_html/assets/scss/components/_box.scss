@@ -1,0 +1,211 @@
+.box {
+  text-align: center;
+  position: relative;
+  padding: 50px;
+
+  @include device_min(medium) {
+    width: 835px;
+
+    margin: {
+      left: auto;
+      right: auto;
+    }
+  }
+
+  .box-frame {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border: 10px solid transparent;
+
+    &:before,
+    &:after {
+      position: absolute;
+      content: "";
+    }
+
+    &:before {
+      top: -9px;
+      bottom: -9px;
+      left: 40px;
+      right: 40px;
+
+      border: {
+        top: 9px solid #fff;
+        bottom: 9px solid #fff;
+      }
+    }
+
+    &:after {
+      top: 40px;
+      bottom: 40px;
+      left: -9px;
+      right: -9px;
+
+      border: {
+        left: 9px solid #fff;
+        right: 9px solid #fff;
+      }
+    }
+
+    .box-border {
+      position: absolute;
+      content: "";
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+
+      &:before,
+      &:after {
+        position: absolute;
+        content: "";
+        background-color: #fff;
+      }
+
+      &:before {
+        top: 0px;
+        bottom: 0px;
+        left: 40px;
+        right: 40px;
+
+        border: {
+          top: 1px solid $primary-color;
+          bottom: 1px solid $primary-color;
+        }
+      }
+
+      &:after {
+        top: 40px;
+        bottom: 40px;
+        left: 0px;
+        right: 0px;
+
+        // background: {
+        //   image: url(../images/logo_bg.svg);
+        //   repeat: no-repeat;
+        //   position: calc(100% + 140px) 50%;
+        // }
+
+        border: {
+          left: 1px solid $primary-color;
+          right: 1px solid $primary-color;
+        }
+      }
+    }
+
+    .box-corner {
+      position: absolute;
+      content: "";
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      overflow: hidden;
+
+      span {
+        position: absolute;
+        content: "";
+        border: 9px solid #fff;
+        border-radius: 50%;
+        width: 98px;
+        height: 98px;
+
+        &:before {
+          position: absolute;
+          content: "";
+          width: 24px;
+          height: 24px;
+          background-color: #fff;
+          background-image: url(data:image/svg+xml;base64,PHN2ZyBpZD0iTGF5ZXJfMSIgZGF0YS1uYW1lPSJMYXllciAxIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNy4xIiBoZWlnaHQ9IjE3LjExIiB2aWV3Qm94PSIwIDAgMTcuMSAxNy4xMSI+ICA8ZGVmcz4gICAgPHN0eWxlPiAgICAgIC5jbHMtMSB7ICAgICAgICBmaWxsOiBub25lOyAgICAgICAgc3Ryb2tlOiAjMjViMWFjOyAgICAgICAgc3Ryb2tlLW1pdGVybGltaXQ6IDEwOyAgICAgIH0gICAgPC9zdHlsZT4gIDwvZGVmcz4gIDx0aXRsZT5BcnRib2FyZCAxPC90aXRsZT4gIDxwYXRoIGNsYXNzPSJjbHMtMSIgZD0iTTE0LjMxLDUuMDhjMi44MywyLjg0LDMuMDYsNy4yLjUxLDkuNzZzLTYuOTIsMi4zMi05Ljc1LS41MVMuNi42LjYuNiwxMS40OCwyLjI0LDE0LjMxLDUuMDhaIi8+PC9zdmc+);
+          background-repeat: no-repeat;
+          background-position: right bottom;
+        }
+
+        &:after {
+          position: absolute;
+          content: "";
+          width: 100px;
+          height: 100px;
+          border-radius: 50%;
+          border: 1px solid $primary-color;
+        }
+
+        &:nth-child(1) {
+          top: -49px;
+          left: -49px;
+
+          &:before {
+            right: -12px;
+            bottom: -12px;
+          }
+
+          &:after {
+            right: -10px;
+            bottom: -10px;
+          }
+        }
+
+        &:nth-child(2) {
+          top: -49px;
+          right: -49px;
+
+          &:before {
+            transform: rotate(90deg);
+            left: -12px;
+            bottom: -12px;
+          }
+
+          &:after {
+            left: -10px;
+            bottom: -10px;
+          }
+        }
+
+        &:nth-child(3) {
+          bottom: -49px;
+          left: -49px;
+
+          &:before {
+            transform: rotate(-90deg);
+            right: -12px;
+            top: -12px;
+          }
+
+          &:after {
+            right: -10px;
+            top: -10px;
+          }
+        }
+
+        &:nth-child(4) {
+          bottom: -49px;
+          right: -49px;
+
+          &:before {
+            transform: rotate(180deg);
+            left: -12px;
+            top: -12px;
+          }
+
+          &:after {
+            left: -10px;
+            top: -10px;
+          }
+        }
+      }
+    }
+  }
+
+  .box-content {
+    position: relative;
+    @include device_max(small) {
+      margin-left: -30px;
+      margin-right: -30px;
+    }
+  }
+
+}

@@ -1,0 +1,66 @@
+.table-scroll{
+  position: relative;
+  @include device_max(large){
+    padding: 0 40px
+  }
+}
+.table-navs {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  .table-nav {
+    border: 0;
+    background-color: transparent;
+    line-height: 1;
+    padding: 0;
+    position: absolute;
+    top: 23px;
+    color: $line-color;
+    &:hover{
+      color: $primary-color;
+    }
+    i{
+      font-size: 30px;
+    }
+  
+    &.prev {
+      left: -7px;
+      @include device_min(large){
+        left: auto;
+        right: calc(100% + 23px);
+      }
+    }
+
+    &.next {
+      right: -7px;
+      @include device_min(large){
+        right: auto;
+        left: calc(100% + 23px);
+      }
+    }
+  }
+}
+
+.table-content{
+  position: relative;
+  overflow-x: scroll;
+  &::-webkit-scrollbar{
+    width: 0;
+    height: 0;
+  }
+  table{
+    max-width: initial;
+    width: auto;
+    min-width: 1170px;
+    margin: {
+      left: auto;
+      right: auto;
+    }
+    th{
+      white-space: nowrap;
+    }
+  }
+}

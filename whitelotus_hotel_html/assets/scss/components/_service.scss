@@ -1,0 +1,63 @@
+.list-services{
+  text-align: left;
+  width: 100%;
+  @include device_min(medium) {
+    display: inline-block;
+    width: 870px;
+    margin: {
+      left: auto;
+      right: auto;
+    }
+  }
+  >ul{
+    float: left;
+    width: 100%;
+    font-size: 0;
+    >li{
+      float: left;
+      width: 100%;
+      margin: {
+        left: 0;
+        bottom: 45px;
+      }
+      &:last-child{
+        margin-bottom: 0;
+      }
+      @include device_min(small) {
+        width: 50%;
+        &:nth-child(2n+1){
+          clear: left;
+        }
+        &:last-child,
+        &:nth-last-child(2) {
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+}
+
+.service-item{
+  width: 100%;
+  padding-left: 35px;
+  position: relative;
+  @include device_min(small) {
+    width: 340px;
+  }
+  .icon{
+    position: absolute;
+    top: -5px;
+    left: 0;
+    color: $gray;
+    font-size: 21px;
+  }
+  .service-content{}
+  .service-title{
+    margin-top: 0;
+    margin-bottom: 5px;
+  }
+  .service-description{
+    display: block;
+    font-size: 16px;
+  }
+}

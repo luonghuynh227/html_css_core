@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+	
+	<head>
+				<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>Shop</title>
+<!-- <link href="https://fonts.googleapis.com/css?family=Muli:300|Taviraj&amp;subset=vietnamese" rel="stylesheet"> -->
+		<link rel="stylesheet" href="./assets/css/vendor.css" />
+<link rel="stylesheet" href="./assets/css/main.css" />
+<link rel="stylesheet" href="./assets/css/responsive.css" />	</head>
+
+	<body>	
+  
+      	<input id="toggle-hamburger" type="checkbox" style="display:none" />
+<nav id="navbar">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <label for="toggle-hamburger" class="hamburger hamburger--squeeze">
+        <div class="hamburger-box">
+          <div class="hamburger-inner"></div>
+        </div>
+      </label>
+      <div class="logo">
+        <img src="./assets/images/logo_hotel.svg" alt="logo">
+      </div>
+      <div class="languages">
+        <ul class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">VI</a>
+          <ul class="dropdown-menu">
+            <li><a href="#">VN</a></li>
+            <li><a href="#">EN</a></li>
+          </ul>
+        </ul>
+      </div>
+    </div>
+    <div class="navbar-content">
+      <div class="menus">
+        <div class="menu-item menu-left">
+          <ul class="nav nav-pills">
+            <li class="active"><a href="#">Hotel Overview</a></li>
+            <li><a href="#">Accommodation</a></li>
+            <li><a href="#">Restaurants & Bars</a></li>
+            <li><a href="#">Meetings & Events</a></li>
+          </ul>
+        </div>
+        <div class="menu-item menu-right">
+          <ul class="nav nav-pills">
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" type="button" data-toggle="dropdown">Leisure</a>
+              <ul class="dropdown-menu">
+                <li><a href="#">Item 1</a></li>
+                <li><a href="#">Item 2</a></li>
+                <li><a href="#">Item 3</a></li>
+              </ul>
+            </li>
+            <li><a href="#">Destination</a></li>
+            <li><a href="#">Promotions</a></li>
+            <li><a href="#">Contact us</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</nav>	
+	<header id="header">
+  <div class="slide-header owl-carousel owl-theme">
+    <div class="slide-item" style="background-image:url(./assets/images/slide_header_img.jpg);">
+      <div class="container">
+        <h1 class="slide-heading"><small>I Welcome To</small>White Lotus Hotel</h1>
+      </div>
+    </div>
+    <div class="slide-item" style="background-image:url(./assets/images/slide_header_img.jpg);">
+      <div class="container">
+        <h1 class="slide-heading"><small>I Welcome To</small>White Lotus Hotel 2</h1>
+      </div>
+    </div>
+    <div class="slide-item" style="background-image:url(./assets/images/slide_header_img.jpg);">
+      <div class="container">
+        <h1 class="slide-heading"><small>I Welcome To</small>White Lotus Hotel 3</h1>
+      </div>
+    </div>
+    <div class="slide-item" style="background-image:url(./assets/images/slide_header_img.jpg);">
+      <div class="container">
+        <h1 class="slide-heading"><small>I Welcome To</small>White Lotus Hotel 4</h1>
+      </div>
+    </div>
+    <div class="slide-item" style="background-image:url(./assets/images/slide_header_img.jpg);">
+      <div class="container">
+        <h1 class="slide-heading"><small>I Welcome To</small>White Lotus Hotel 5</h1>
+      </div>
+    </div>
+  </div>
+</header>
+
+<section class="form-book">
+  <div class="container">
+    <form id="form-book" class="form-inline" action="#">
+      <div class="form-group check-in">
+        <label class="control-label" for="">Check-in</label>
+        <input type="text" class="form-control datetime" placeholder="dd/mm/yyyy - hh:mm"/>
+      </div>
+      <div class="form-group check-out">
+        <label class="control-label" for="">Check-out</label>
+        <input type="text" class="form-control datetime" placeholder="dd/mm/yyyy - hh:mm"/>
+      </div>
+      <div class="form-group adult">
+        <label class="control-label" for="">Adult</label>
+        <input type="number" class="form-control" min="0" max="100" value="0"/>
+      </div>
+      <div class="form-group children">
+        <label class="control-label" for="">Children(≤ 6yrs old)</label>
+        <input type="number" class="form-control" min="0" max="100" value="0"/>
+      </div>
+      <div class="form-group no-of-room">
+        <label class="control-label" for="">No of Room</label>
+        <input type="number" class="form-control" min="0" max="100" value="0"/>
+      </div>
+      <div class="form-group submit">
+        <button class="btn btn-primary" type="button">Book Now</button>
+      </div>
+    </form>
+  </div>
+</section>	
+	<header class="woocommerce-products-header">
+    <h1 class="woocommerce-products-header__title page-title">Shop</h1>
+</header>
+<ul class="products">
+  <li class="product">
+  <a href="#" class="woocommerce-LoopProduct-link">
+    <img src="https://picsum.photos/250/250/?random" alt="product-img">
+    <h2 class="woocommerce-loop-product__title">Beanie</h2>
+    <span class="onsale">Sale!</span>
+    <span class="price">
+      <del>
+        <span class="woocommerce-Price-amount amount"><span class="woocommerce-Price-currencySymbol">$</span>20.00</span>
+      </del> 
+      <ins>
+        <span class="woocommerce-Price-amount amount"><span class="woocommerce-Price-currencySymbol">$</span>18.00</span>
+      </ins>
+    </span>
+  </a>
+</li>  <li class="product">
+  <a href="#" class="woocommerce-LoopProduct-link">
+    <img src="https://picsum.photos/250/250/?random" alt="product-img">
+    <h2 class="woocommerce-loop-product__title">Beanie</h2>
+    <span class="onsale">Sale!</span>
+    <span class="price">
+      <del>
+        <span class="woocommerce-Price-amount amount"><span class="woocommerce-Price-currencySymbol">$</span>20.00</span>
+      </del> 
+      <ins>
+        <span class="woocommerce-Price-amount amount"><span class="woocommerce-Price-currencySymbol">$</span>18.00</span>
+      </ins>
+    </span>
+  </a>
+</li>  <li class="product">
+  <a href="#" class="woocommerce-LoopProduct-link">
+    <img src="https://picsum.photos/250/250/?random" alt="product-img">
+    <h2 class="woocommerce-loop-product__title">Beanie</h2>
+    <span class="onsale">Sale!</span>
+    <span class="price">
+      <del>
+        <span class="woocommerce-Price-amount amount"><span class="woocommerce-Price-currencySymbol">$</span>20.00</span>
+      </del> 
+      <ins>
+        <span class="woocommerce-Price-amount amount"><span class="woocommerce-Price-currencySymbol">$</span>18.00</span>
+      </ins>
+    </span>
+  </a>
+</li>  <li class="product">
+  <a href="#" class="woocommerce-LoopProduct-link">
+    <img src="https://picsum.photos/250/250/?random" alt="product-img">
+    <h2 class="woocommerce-loop-product__title">Beanie</h2>
+    <span class="onsale">Sale!</span>
+    <span class="price">
+      <del>
+        <span class="woocommerce-Price-amount amount"><span class="woocommerce-Price-currencySymbol">$</span>20.00</span>
+      </del> 
+      <ins>
+        <span class="woocommerce-Price-amount amount"><span class="woocommerce-Price-currencySymbol">$</span>18.00</span>
+      </ins>
+    </span>
+  </a>
+</li>  <li class="product">
+  <a href="#" class="woocommerce-LoopProduct-link">
+    <img src="https://picsum.photos/250/250/?random" alt="product-img">
+    <h2 class="woocommerce-loop-product__title">Beanie</h2>
+    <span class="onsale">Sale!</span>
+    <span class="price">
+      <del>
+        <span class="woocommerce-Price-amount amount"><span class="woocommerce-Price-currencySymbol">$</span>20.00</span>
+      </del> 
+      <ins>
+        <span class="woocommerce-Price-amount amount"><span class="woocommerce-Price-currencySymbol">$</span>18.00</span>
+      </ins>
+    </span>
+  </a>
+</li>  <li class="product">
+  <a href="#" class="woocommerce-LoopProduct-link">
+    <img src="https://picsum.photos/250/250/?random" alt="product-img">
+    <h2 class="woocommerce-loop-product__title">Beanie</h2>
+    <span class="onsale">Sale!</span>
+    <span class="price">
+      <del>
+        <span class="woocommerce-Price-amount amount"><span class="woocommerce-Price-currencySymbol">$</span>20.00</span>
+      </del> 
+      <ins>
+        <span class="woocommerce-Price-amount amount"><span class="woocommerce-Price-currencySymbol">$</span>18.00</span>
+      </ins>
+    </span>
+  </a>
+</li></ul>
+
+	<footer id="footer">
+
+  <div class="footer-header">
+    <div class="container">
+      <div class="footer-logo">
+        <a href="#"><img src="./assets/images/logo_convention.svg" alt="Whitelotus Convention"></a>
+      </div>
+      <form id="form-subscribe" action="#">
+        <div class="form-group">
+          <input type="email" class="form-control" name="email" id="email" placeholder="Nhập email để nhận thông tin khuyến mãi" autocomplete="off" required="">
+          <button type="submit" class="btn-icon icon icon-plane"></button>
+        </div>
+        <input type="hidden" name="action" value="subscribe">
+      </form>
+      <p class="footer-hotline text-center">Hotline: <a href="tel:+ 84 (0) 234 3830 444">+ 84 (0) 234 3830 444</a></p>
+    </div>
+  </div>
+  <div class="footer-body">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3">
+          <ul class="socials list-inline">
+            <li><a href="#" target="_blank"><i class="icon icon-facebook"></i></a></li>
+            <li><a href="#" target="_blank"><i class="icon icon-youtube"></i></a></li>
+            <li><a href="#" target="_blank"><i class="icon icon-instagram"></i></a></li>
+          </ul>
+          <p><b>Email:</b> <a href="mailto:hr@whitelotus.com.vn">hr@whitelotus.com.vn</a></p>
+        </div>
+        <div class="col-md-5">
+          <p><b>Address:</b> 5-7 Hoang Hoa Tham, Hue City, Vietnam</p>
+          <p><span><b>Tel:</b> +84 (0) 234 3830 444</span><span><b>Fax:</b> +84 (0) 234 3828962</span></p>
+        </div>
+        <div class="col-md-4">
+          <p>Managed by Nguyen Huu Minh Nhat</p>
+          <p>Design & Develop by <a class="text-underline" href="#" target="_blank">Junoteam</a></p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <p class="copyright">Copyright © 2018 White Lotus. All rights reserved</p>
+</footer>
+
+<a id="scrollTop" href="#header" class="active"><i class="icon icon-arrow-up"></i></a>
+	<script src="./assets/js/jquery.min.js"></script>
+<script src="./assets/js/vendor.min.js"></script>
+<script src="./assets/js/app.min.js"></script>	</body>
+</html>

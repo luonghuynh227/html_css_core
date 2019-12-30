@@ -1,0 +1,26 @@
+@font-face {
+    font-family: 'Taviraj';
+    src: url('Taviraj-Regular.eot');
+    src: url('Taviraj-Regular.eot?#iefix') format('embedded-opentype'),
+        url('Taviraj-Regular.woff2') format('woff2'),
+        url('Taviraj-Regular.woff') format('woff'),
+        url('Taviraj-Regular.ttf') format('truetype'),
+        url('Taviraj-Regular.svg#Taviraj-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Taviraj';
+    src: url('Taviraj-Bold.eot');
+    src: url('Taviraj-Bold.eot?#iefix') format('embedded-opentype'),
+        url('Taviraj-Bold.woff2') format('woff2'),
+        url('Taviraj-Bold.woff') format('woff'),
+        url('Taviraj-Bold.ttf') format('truetype'),
+        url('Taviraj-Bold.svg#Taviraj-Bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+}
+
+
+

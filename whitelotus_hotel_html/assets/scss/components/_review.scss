@@ -1,0 +1,99 @@
+.review {
+  min-height: 450px;
+  margin-bottom: 35px;
+  .box-border {
+    &:after {
+      background: {
+        image: url(../images/logo_bg.svg);
+        repeat: no-repeat;
+        position: calc(100% + 140px) 50%;
+      }
+    }
+  }
+  .review-logo {
+    display: inline-block;
+    font-size: 0;
+    margin-bottom: 40px;
+    img {
+      margin: {
+        left: auto;
+        right: auto;
+        bottom: 18px;
+      }
+    }
+    .dots {
+      color: #00a680;
+      font-size: 0;
+      display: inline-block;
+      >i {
+        display: inline-block;
+      }
+    }
+  }
+  .review-slide {
+    margin-bottom: 34px;
+    
+    // padding: 0 80px;
+    // &:before {
+    //   position: absolute;
+    //   content: "";
+    //   width: 39px;
+    //   height: 31px;
+    //   background: {
+    //     image: url(data:image/svg+xml;base64,PHN2ZyBpZD0iTGF5ZXJfMSIgZGF0YS1uYW1lPSJMYXllciAxIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAzOC4xMSAzMS4yMSI+PGRlZnM+PHN0eWxlPi5jbHMtMXtpc29sYXRpb246aXNvbGF0ZTt9LmNscy0ye2ZpbGw6I2U4ZjZmNzt9PC9zdHlsZT48L2RlZnM+PHRpdGxlPkFydGJvYXJkIDE8L3RpdGxlPjxnIGlkPSJfIiBkYXRhLW5hbWU9IiAiIGNsYXNzPSJjbHMtMSI+PGcgY2xhc3M9ImNscy0xIj48cGF0aCBjbGFzcz0iY2xzLTIiIGQ9Ik0yLjQsMjguNTFBMTAuNzQsMTAuNzQsMCwwLDEsMCwyMS4xUTAsMTUuNCw0LjMsOS42NUE0MS4zOSw0MS4zOSwwLDAsMSwxNC40LDBsMi45LDIuNnEtNS45LDUuOS01LjksMTEuOEE2LjA2LDYuMDYsMCwwLDAsMTIsMTcuMDUsMTcuMDYsMTcuMDYsMCwwLDAsMTMuNiwxOS43YTE4LjksMTguOSwwLDAsMSwxLjY1LDIuNiw1LjU0LDUuNTQsMCwwLDEsLjU1LDIuNSw2LDYsMCwwLDEtMiw0LjUsNy4zOCw3LjM4LDAsMCwxLTUuMywxLjlBNy44LDcuOCwwLDAsMSwyLjQsMjguNTFabTIwLjgsMGExMC43NCwxMC43NCwwLDAsMS0yLjQtNy40cTAtNS43LDQuMy0xMS40NUE0MS4zOSw0MS4zOSwwLDAsMSwzNS4yMSwwbDIuOSwyLjZxLTUuOSw1LjktNS45LDExLjhhNi4wNyw2LjA3LDAsMCwwLC41NSwyLjY1LDE3LjExLDE3LjExLDAsMCwwLDEuNjUsMi42NSwxOC45LDE4LjksMCwwLDEsMS42NSwyLjYsNS41NCw1LjU0LDAsMCwxLC41NSwyLjUsNiw2LDAsMCwxLTIsNC41LDcuMzgsNy4zOCwwLDAsMS01LjMsMS45QTcuOCw3LjgsMCwwLDEsMjMuMiwyOC41MVoiLz48L2c+PC9nPjwvc3ZnPg==);
+    //     size: cover;
+    //     position: center;
+    //     repeat: no-repeat;
+    //   }
+    //   z-index: 1;
+    //   left: 30px;
+    //   top: 30px;
+    // }
+    @include device_min(small) {
+      padding: 0 25px;
+    }
+
+
+    .owl-dots {
+      position: absolute;
+      bottom: 0;
+    }
+  }
+  .review-item {
+    .review-title {
+      margin: {
+        top: 0;
+        bottom: 12px;
+      }
+    }
+    .review-quote {
+      margin-bottom: 27px;
+      position: relative;
+      padding: 0 55px;
+
+      &:before {
+        position: absolute;
+        content: '“';
+        @include font_heading;
+        color: $bg-color;
+        font-size: 100px;
+        font-weight: bold;
+        left: 0;
+        top: -35px;
+      }
+    }
+    .review-author {
+      margin-bottom: 0;
+    }
+    .review-address {
+      margin-bottom: 0;
+    }
+  }
+  #review-slide-dots {
+    position: absolute;
+    bottom: -35px;
+    left: 0;
+    right: 0;
+    width: 100%;
+  }
+}

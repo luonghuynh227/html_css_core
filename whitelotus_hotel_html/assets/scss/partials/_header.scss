@@ -1,0 +1,127 @@
+@import "mixins";
+@import "custom_variables";
+
+#header{
+  padding-top: 80px;
+  background-color: #313131;
+  overflow: hidden;
+  height: 800px;
+  &.header-sub{
+    height: 480px;
+    position: relative;
+    .header-cover-image{
+      position: absolute;
+      top: 80px;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background: {
+        repeat: no-repeat;
+        size: cover;
+        position: center;
+      }
+    }
+  }
+}
+
+.slide-header{
+  background-color: #313131;
+  .slide-item{
+    height: 720px;
+    @include cover_image; 
+    .container{
+      height: 400px;
+      position: relative;
+    }
+  }
+  .slide-heading{
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    color: #fff;
+    text-transform: uppercase;
+    padding: 0 15px;
+    margin: {
+      top: 0;
+      bottom: 7px;
+    }
+    small{
+      color: #fff;
+      width: 100%;
+      display: block;
+      font-size: 24px;
+      @include font_content;
+      margin-bottom: 8px;
+    }
+  }
+  .owl-dots{
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 400px;
+    text-align: left;
+    .owl-dot{
+      
+    }
+  }
+}
+
+
+// FORM BOOK
+.form-book{
+  background-color: $bg-color-2;
+  padding: 20px 0 30px;
+}
+#form-book{
+  display: table;
+  width: 100%;
+  .form-group{
+    display: table-cell;
+    vertical-align: top;
+    padding-right: 20px;
+  }
+  .control-label{
+    color: $gray-light;
+  }
+  .form-control{
+    background-color: transparent;
+    color: #fff;
+    border-color: $gray-light;
+    width: 100%;
+    &:focus{
+      border-color: $primary-color;
+    }
+  }
+  .check-in{
+    width: 239px;
+  }
+  .check-out{
+    width: 239px;
+  }
+  .adult{
+    width: 173px;
+  }
+  .children{
+    width: 173px;
+  }
+  .no-of-room{
+    width: 173px;
+  }
+  .submit{
+    width: 170px;
+    padding-right: 0;
+    .btn{
+      margin-top: 38px;
+      display: block;
+    }
+  }
+  @include device_max(large) {
+    display: block;
+    .form-group{
+      display: block;
+      width: 100%;
+      margin-bottom: 13px;
+    }
+  }
+}

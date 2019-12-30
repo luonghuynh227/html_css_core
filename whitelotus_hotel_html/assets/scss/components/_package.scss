@@ -1,0 +1,154 @@
+.package-item {
+  color: $gray; 
+  font-size: 16px;
+  margin-bottom: 40px;
+  &:last-child{
+    margin-bottom: 0;
+  }
+  @include device_min(small) {
+    &:nth-child(2n+1) {
+      clear: left;
+    }
+    &:nth-last-child(2){
+      margin-bottom: 0;
+    }
+  }
+
+  .box {
+    width: 100%;
+    display: inline-block;
+    vertical-align: top;
+    min-height: 714px;
+    @include device_max(small) {
+      min-height: auto!important;
+    }
+    @include device_min(small) {
+      max-width: 420px;
+    }
+  }
+
+  .package-content {
+    padding: 24px 15px;
+  }
+
+  .package-price {
+    margin-bottom: 40px;
+
+    .caption,
+    .price,
+    .person {
+      display: block;
+    }
+
+    .caption {
+      text-transform: uppercase;
+      margin-bottom: 5px;
+    }
+
+    .price {
+      @include font_heading;
+      font-size: 50px;
+      color: $primary-color;
+
+      small {
+        font: {
+          size: 16px;
+        }
+      }
+    }
+
+    .person {
+      margin-top: -3px;
+    }
+  }
+
+  .package-include {
+    .caption {
+      font-weight: bold;
+      font-style: italic;
+      margin-bottom: 2px;
+    }
+
+    .nav {
+      >li {
+        margin-left: 0;
+        margin-bottom: 2px;
+        &:last-child{
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+}
+
+.package-list {
+  //font-size: 0;
+
+  .package-item {
+
+    @include device_min(small) {
+      // width: 50%;
+      // display: inline-block;
+      // padding: 0 15px;
+
+      &:nth-child(odd) {
+        text-align: right;
+      }
+
+      &:nth-child(even) {
+        text-align: left;
+      }
+    }
+  }
+}
+
+.packpage{
+  margin-bottom: 90px;
+  position: relative;
+  z-index: 1;
+
+  &:last-child{
+    margin-bottom: 0;
+  }
+
+  .packpage-title{
+    margin-top: 145px;
+    margin-bottom: 40px;
+  }
+
+  &:first-child{
+    .packpage-title{
+      margin-top: 0;
+    }
+  }
+
+}
+
+.package-line{
+  position: absolute;
+  opacity: .1;
+  margin-top: -318px;
+  width: 657px;
+  height: 636px;
+  left: -328.5px;
+  background: {
+    image: url(../images/logo_bg_2.svg);
+    repeat: no-repeat;
+    size: cover;
+    position: center;
+  }
+}
+
+.package-bottom{
+  >p{
+    margin-top: 89px;
+    margin-bottom: 32px;
+    @include device_min(small) {
+      width: 630px;
+      margin: {
+        left: auto;
+        right: auto;
+      }
+    }
+  }
+}

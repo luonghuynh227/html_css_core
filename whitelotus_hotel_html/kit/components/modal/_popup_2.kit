@@ -1,0 +1,55 @@
+<div id="bookRoomModal" class="popup-2 modal modal-lg fade" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+       <button type="button" class="close-icon" data-dismiss="modal"></button>
+      <div class="modal-header">
+        <div class="cover-image" style="background-image: url(./assets/images/popup_img_1.jpg)"></div>
+      </div>
+      <div class="modal-body">
+        <h3 class="modal-title">Holiday Season Promotion 2018</h3>
+          <p class="modal-description">White Lotus a magical and charming city. I hope you will find that the character</p>
+          <form action="#" class="text-center">
+            <div class="col-left">
+              <div class="form-group">
+                <label for="full_name" class="control-label">Full Name</label>
+                <input type="text" class="form-control" id="full_name" name="full_name" />
+              </div>
+              <div class="form-group">
+                <label for="phone" class="control-label">Phone</label>
+                <input id="phone" type="text" class="form-control" name="phone" />
+              </div>
+              <div class="form-group">
+                <label for="arrival" class="control-label">Arrival</label>
+                <input id="arrival" type="text" class="form-control datetime" name="arrival" />
+              </div>
+            </div>
+            <div class="col-right">
+              <div class="form-group">
+                <label for="email" class="control-label">Email</label>
+                <input id="email" type="email" class="form-control" name="email" />
+              </div>
+              <div class="col-row">
+              <div class="form-group">
+                <label for="adults" class="control-label">Adults</label>
+                <input id="adults" type="number" class="form-control" name="adults" />
+              </div>
+              <div class="form-group">
+                  <label for="childrens" class="control-label">Childrens</label>
+                  <input id="childrens" type="number" class="form-control" name="childrens" />
+                </div>
+              </div>
+              <div class="form-group">
+                  <label for="departure" class="control-label">Departure</label>
+                  <input id="departure" type="text" class="form-control datetime" name="departure" />
+                </div>
+            </div>
+            <div class="form-group">
+              <label for="note" class="control-label">Note</label>
+              <textarea class="form-control" name="note" id="note" rows="3"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary" data-toggle="modal" data-target="#bookRoomModal">Book Now</button>
+          </form>
+      </div>
+    </div>
+  </div>
+</div>
